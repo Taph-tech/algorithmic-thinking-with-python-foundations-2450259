@@ -61,3 +61,9 @@ for x in range(9, 101, 9):
   doors[i] = not doors[i]
   count +=1
   print("Toggling door", doors[i] ,count)
+
+
+
+for  i in    range(5):
+    for   j  in  range(3):
+                print(i,j)
