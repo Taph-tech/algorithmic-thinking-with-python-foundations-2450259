@@ -6,9 +6,9 @@ def linear_search(data, target):
 
 
 def linear_search1(data1, target1):
-    for index in range(len(data1)):
+    for index, val in enumerate(data1):
         if data1[index] == target1:
-            return index
+            return index  # Early exit if item is found.
     return -1
 
 data = [4, 5, 2, 7, 1, 8]
