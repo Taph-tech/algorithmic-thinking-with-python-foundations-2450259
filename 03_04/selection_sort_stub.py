@@ -1,8 +1,15 @@
 def selection_sort(xs):
     pass
+    for i in range(len(xs)-1):
+        min_index = i
+        for j in range(i + 1, len(xs)):
+          if xs[j] < xs[min_index]:
+           min_index = j
+        xs[i], xs[min_index] = xs[min_index], xs[i]
 
 
-xs = [3, 2, 1, 5, 4]
+#xs = [3, 2, 1, 5, 4]
+xs = [64, 25, 12, 22, 11]
 print(xs)
 selection_sort(xs)
 print(xs)
