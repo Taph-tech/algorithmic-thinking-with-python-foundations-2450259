@@ -13,7 +13,7 @@ def binary_search(data, target):
             low_pointer = mid_pointer + 1
         else:
             high_pointer = mid_pointer -1 
-            return -1 # target is not found
+    return -1 # target is not found
         
 
 
