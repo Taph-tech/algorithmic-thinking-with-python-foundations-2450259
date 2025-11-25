@@ -3,16 +3,16 @@ import random
 
 def binary_search(data, target):
     pass
-    low = 0
-    high = len(data) - 1
-    while low <= high:
-        mid = (low + high) // 2
-        if data[mid] == target:
-            return mid # target is found
-        elif data[mid] < target:
-            low = mid + 1
+    low_pointer = 0
+    high_pointer = len(data) - 1
+    while low_pointer <= high_pointer:
+        mid_pointer = (low_pointer + high_pointer) // 2
+        if data[mid_pointer] == target:
+            return mid_pointer # target is found
+        elif data [mid_pointer] < target:
+            low_pointer = mid_pointer + 1
         else:
-            high = mid -1 
+            high_pointer = mid_pointer -1 
             return -1 # target is not found
         
 
